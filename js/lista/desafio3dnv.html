@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificar(lista, tamanhoMinimo) {
+            let novaLista = [];
+            for (let indice = 0; indice < lista.length; indice++) {
+                if (lista[indice].length > tamanhoMinimo) {
+                    novaLista.push(lista[indice]);
+                }
+            }
+            return novaLista;
+        }
+        var lista = ['açucar', 'ovo', 'sal', 'casa', 'farinha', 'chocolate', 'manteiga', 'barrinha', 'brownie', 'sanchesbrownie']
+        var tamanhoMinimo = 5;
+
+        let novaLista = verificar(lista, tamanhoMinimo);
+
+        console.log(novaLista);
+    </script>
+</body>
+</html>
